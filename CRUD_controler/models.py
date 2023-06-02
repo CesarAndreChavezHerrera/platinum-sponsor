@@ -27,6 +27,6 @@ class Capitulos(models.Model):
     numero_del_capitulo = models.CharField(max_length=10)
     lista_etiqueta_capitulo = models.CharField(max_length=100)
     contenido_capitulo = models.TextField(max_length= 8000)
-    url_capitulo = models.CharField()
+    url_capitulo = models.CharField(max_length=400)
 
     pass
