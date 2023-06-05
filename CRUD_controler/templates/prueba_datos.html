@@ -12,9 +12,19 @@
     <body>
         
         <h1>Hola mundo</h1>
-        <form>
+        <form method="post" action="">
+            {% csrf_token %}
             <h2>prueba de get </h2>
+            <p>nombre</p>
             <input type = "text" name = "nombre">
+            <p>apellido</p>
+            <input type = "text" name = "apellido">
+            <p>apodo</p>
+            <input type = "text" name = "nick">
+            <p>correo</p>
+            <input type = "text" name = "correo">
+            <p>password</p>
+            <input type = "text" name = "password">
             <button type = "submit">Enviar datos </button> 
         </form>
         <h2>test de lectura</h2>

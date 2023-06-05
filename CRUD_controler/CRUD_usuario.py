@@ -8,7 +8,7 @@ def guardar(nombre,last_name,nickname,correo,password):
         correo = correo,
         password = password
         )
-    return dato
+    dato.save()
     pass
 
 def leer_todo ():
@@ -30,3 +30,4 @@ def actualizar(id,nombre , last_name ,nickname,correo,password):
 def eliminar():
 
     pass
+

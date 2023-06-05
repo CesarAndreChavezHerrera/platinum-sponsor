@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'login',
     'signup',
+
     'CRUD_controler',
+    'homeview',
+
 ]
 
 MIDDLEWARE = [
