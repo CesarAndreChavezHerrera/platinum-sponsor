@@ -1,26 +1,19 @@
 from django.shortcuts import render
 from CRUD_controler.models import Usuario 
-
+from django.http import HttpResponse
 def login(request):
 
     if request.method == "POST":
-        nickname = request.POST.get("username")
-        password = request.POST.get("pass")
+        datos_ingresado = request.POST
         
-        datos = None
         try:
-            datos = Usuario.objects.get(nickname = nickname)
+            usuarios = Usuario.objects.get(nickname = datos_ingresado['username'])
+            pass
         except:
-            datos = None
+
             pass
-        if datos != None:
-            comprobacion = datos.password == password
-            print(comprobacion)
-            pass
-        
 
         pass
-
     return render(request, 'login.html')
 
 

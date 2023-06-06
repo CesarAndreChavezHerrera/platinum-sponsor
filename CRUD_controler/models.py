@@ -8,7 +8,7 @@ class Usuario(models.Model):
     id_user = models.AutoField(primary_key=True)
     name = models.CharField(max_length = 35)
     last_name = models.CharField(max_length = 35)
-    nickname = models.CharField(max_length=30)
+    nickname = models.CharField(unique=True,max_length=30)
     correo = models.EmailField(unique=True)
     password = models.CharField(max_length=20)
     hora_creacion = models.DateTimeField(auto_now=True)
@@ -17,7 +17,7 @@ class Usuario(models.Model):
 class Proyectos(models.Model):
     id_project = models.AutoField(primary_key=True)
     id_user = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-    name_project = models.CharField(max_length=100)
+    name_project = models.CharField(unique=True,max_length=100)
     descripcion = models.TextField()
     hora_creacion = models.DateTimeField(auto_now=True)
     pass

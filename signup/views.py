@@ -4,6 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 
 from CRUD_controler import models
+from django.shortcuts import redirect
 from django.http import HttpResponse
 
 
@@ -27,14 +28,8 @@ def signup (request):
                     password = datos_ingresado['pass1']
                 )
                 new_user.save
-                """
-                user = User.objects.create_user(username=request.POST['last_login'],
-                                    password=request.POST['pass1'])
-                user.save()
-                login(request, user)
-                """
-                print("creado")
-                return HttpResponse('Usuario creado correctamente')
+                
+                
             
             except:
                 return render (request, 'signup.html',{
