@@ -40,8 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'login',
     'signup',
-    'homeview',
+    'vista_perfil',
+    'vista_editor',
+    'vista_visitante',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
