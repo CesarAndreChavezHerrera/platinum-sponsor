@@ -9,7 +9,7 @@ class Usuario(models.Model):
     name = models.CharField(max_length = 35)
     last_name = models.CharField(max_length = 35)
     nickname = models.CharField(max_length=30)
-    correo = models.CharField(max_length=100)
+    correo = models.EmailField(unique=True)
     password = models.CharField(max_length=20)
     hora_creacion = models.DateTimeField(auto_now=True)
     pass
