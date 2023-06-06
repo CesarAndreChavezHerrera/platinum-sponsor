@@ -15,12 +15,22 @@ def leer_todo ():
     dato = Usuario.objects.all()
     return dato 
 
-def leer_uno(id = None,correo = None):
+def leer_uno(id = None,nickname = None):
     if id != None:
-        dato = Usuario.objects.get(id_user = id)
+        try:
+            dato = Usuario.objects.get(id_user = id)
+        except:
+            dato = None
         return dato
         pass
-   
+    if nickname != None:
+        try:
+            dato = Usuario.objects.get(nickname = nickname)
+        except:
+            dato = None    
+            pass
+        return dato
+        pass
     pass
 def actualizar(id,nombre , last_name ,nickname,correo,password):
 

@@ -2,3 +2,4 @@
 
 venv/
 PlatinumSponsor.db
+__pycache__/

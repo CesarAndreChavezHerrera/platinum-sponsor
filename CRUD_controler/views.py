@@ -6,11 +6,16 @@ from CRUD_controler import CRUD_usuario as usuario
 def prueba(request):
     nombre = "1" 
     datos = None
+    id_user = []
+
     tipo_peticion = request.method
     print(tipo_peticion)
     if tipo_peticion == "GET":
         datos = usuario.leer_todo()
-        
+        for a in datos.values():
+            print(a["id_user"])
+
+            pass
         pass
     if tipo_peticion == "POST":
         nombre = request.POST.get('nombre')
@@ -30,5 +35,5 @@ def prueba(request):
         pass
 
     return render(request, 'prueba_datos.html',
-                  {"nombre":nombre,"dato":datos}
+                  {"nombre":nombre,}
                   )

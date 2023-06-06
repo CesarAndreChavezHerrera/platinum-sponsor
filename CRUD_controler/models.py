@@ -1,4 +1,7 @@
+
 from django.db import models
+
+
 
 # Create your models here.
 class Usuario(models.Model):
@@ -6,10 +9,9 @@ class Usuario(models.Model):
     name = models.CharField(max_length = 35)
     last_name = models.CharField(max_length = 35)
     nickname = models.CharField(max_length=30)
-    correo = models.CharField(max_length = 100)
+    correo = models.CharField(max_length=100)
     password = models.CharField(max_length=20)
     hora_creacion = models.DateTimeField(auto_now=True)
-
     pass
 
 class Proyectos(models.Model):

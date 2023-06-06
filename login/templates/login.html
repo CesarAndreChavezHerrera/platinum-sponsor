@@ -29,7 +29,7 @@
 
                     <div class="contact">
                         <form method="post" action="">
-                        
+                            {% csrf_token %}
                             <h3>INICIAR SESIÓN</h3>
                             <input name="username" autocomplete="username" maxleng type="text" placeholder="USERNAME">
                             <input name="pass" type="password" placeholder="PASSWORD">
