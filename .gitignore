@@ -1,3 +1,5 @@
 # Carpeta a ignorar 
 
 venv/
+PlatinumSponsor.db
+__pycache__/

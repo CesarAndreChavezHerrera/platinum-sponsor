@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PRUEBA GUADAR datos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <h1>Hola mundo</h1>
+        <form method="post" action="">
+            {% csrf_token %}
+            <h2>prueba de get </h2>
+            <p>nombre</p>
+            <input type = "text" name = "nombre">
+            <p>apellido</p>
+            <input type = "text" name = "apellido">
+            <p>apodo</p>
+            <input type = "text" name = "nick">
+            <p>correo</p>
+            <input type = "text" name = "correo">
+            <p>password</p>
+            <input type = "text" name = "password">
+            <button type = "submit">Enviar datos </button> 
+        </form>
+        <h2>test de lectura</h2>
+        <p>{{nombre}}</P>
+        <script src="" async defer></script>
+    </body>
+</html>

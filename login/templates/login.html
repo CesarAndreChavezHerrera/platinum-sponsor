@@ -29,9 +29,10 @@
 
                     <div class="contact">
                         <form method="post" action="">
-                        
+                            {% csrf_token %}
                             <h3>INICIAR SESIÓN</h3>
-                            <input name="username" autocomplete="username" maxleng type="text" placeholder="USERNAME">
+                            <p style= "color: red;">{{error_mensaje}}<p >
+                            <input name="nickname" autocomplete="nickname" maxleng type="text" placeholder="USERNAME">
                             <input name="pass" type="password" placeholder="PASSWORD">
                             <button class="submit">VAMOS</button>
                         </form>
