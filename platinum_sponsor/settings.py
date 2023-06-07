@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'Home_usuario',
     'Perfil_usuario',
     'Proyectos_usuario',
-    'Registro_usuario'
+    'Registro_usuario',
     ]
 
 
