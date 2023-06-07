@@ -38,11 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'login',
-    'signup',
-    'vista_perfil',
-    'vista_editor',
-    'vista_visitante',
     'CRUD_controler',
 ]
 
