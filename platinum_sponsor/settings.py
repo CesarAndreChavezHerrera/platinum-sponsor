@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'vista_perfil',
     'vista_editor',
     'vista_visitante',
+    'CRUD_controler',
 ]
 
 
