@@ -19,10 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', include('login.urls')),
-    path('signup/', include('signup.urls')),
-    path('home/', include('homeview.urls')),
-    path('home/perfil', include('vista_perfil.urls')),
-    path('home/editor', include('vista_editor.urls')),
-    path('homevisitante', include('vista_visitante.urls')),
+    
 ]
